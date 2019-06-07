@@ -10,7 +10,7 @@
       rules: [
         {
           test: /\.css$/,   // 要处理什么类型的文件，用正则去匹配。这里是 css 文件
-          use: ['style-loader', 'css-loader']   // 顺序从右往左的执行
+          use: ['style-loader', 'css-loader']   // 顺序从右往左的执行，如果loader需要参数，就得写成对象的形式
         }
       ]
     }
